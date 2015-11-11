@@ -3,7 +3,7 @@ nettle
 
 [![GPL2 Licensed](http://img.shields.io/badge/license-GPL2-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v2)
 
-Package repo for [nettle[(http://www.lysator.liu.se/~nisse/nettle/)
+Package repo for [nettle](http://www.lysator.liu.se/~nisse/nettle/)
 
 ## Usage
 
