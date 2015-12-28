@@ -1,0 +1,13 @@
+item do
+  expected do
+    url_xpath
+    url 'https://git.lysator.liu.se/nettle/nettle/tags'
+    xpath '/html/body/div[1]/div[2]/div[2]/div/div/div[2]/ul/li[2]/div[1]/a/strong/text()'
+    regex /\A\n\nnettle_([\d.]+)_release_\d+$/
+  end
+
+  actual do
+    git_tag
+    regex /^(.*)-\d+$/
+  end
+end
