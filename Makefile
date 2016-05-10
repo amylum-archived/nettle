@@ -5,14 +5,14 @@ BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 PATH_FLAGS = --prefix=/usr --infodir=/tmp/trash
-CONF_FLAGS = --disable-shared
-CFLAGS = -static -static-libgcc -Wl,-static -lc
+CONF_FLAGS =
+CFLAGS =
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/nettle_//;s/_.*//')
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
-GMP_VERSION = 6.1.0-1
+GMP_VERSION = 6.1.0-3
 GMP_URL = https://github.com/amylum/gmp/releases/download/$(GMP_VERSION)/gmp.tar.gz
 GMP_TAR = /tmp/gmp.tar.gz
 GMP_DIR = /tmp/gmp
