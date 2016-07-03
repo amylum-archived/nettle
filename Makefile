@@ -12,7 +12,7 @@ PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/nettle
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
-GMP_VERSION = 6.1.0-3
+GMP_VERSION = 6.1.1-4
 GMP_URL = https://github.com/amylum/gmp/releases/download/$(GMP_VERSION)/gmp.tar.gz
 GMP_TAR = /tmp/gmp.tar.gz
 GMP_DIR = /tmp/gmp
