@@ -1,0 +1,28 @@
+name 'nettle'
+org 'amylum'
+
+licenses 'COPYINGv2'
+
+deps(
+  gmp: '6.1.1-4'
+)
+
+configure_flags(
+  prefix: '/usr',
+  'disable-documentation': nil,
+  'with-lib-path': "#{dep(:gmp)}/usr/lib",
+  'with-include-path': "#{dep(:gmp)}/usr/include"
+)
+
+harden
+
+build do
+  run './.bootstrap'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end
