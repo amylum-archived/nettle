@@ -4,7 +4,7 @@ org 'amylum'
 licenses 'COPYINGv2'
 
 deps(
-  gmp: '6.1.1-4'
+  gmp: '6.1.2-1'
 )
 
 configure_flags(
