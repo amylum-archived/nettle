@@ -4,7 +4,10 @@ org 'amylum'
 licenses 'COPYINGv2'
 
 deps(
-  gmp: '6.1.2-1'
+  gmp: {
+    version: '6.1.2-1',
+    checksum: '12515de758fa11b2b3d87b347d0593fc8bde37b32a6c609cbddd09473e180b08'
+  }
 )
 
 configure_flags(
