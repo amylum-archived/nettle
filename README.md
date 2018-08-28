@@ -1,7 +1,7 @@
 nettle
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/nettle/master.svg)](https://circleci.com/gh/amylum/nettle)
+[![Build Status](https://img.shields.io/travis/com/amylum/nettle.svg)](https://travis-ci.com/amylum/nettle)
 [![GitHub release](https://img.shields.io/github/release/amylum/nettle.svg)](https://github.com/amylum/nettle/releases)
 [![GPL2 Licensed](http://img.shields.io/badge/license-GPL2-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v2)
 
